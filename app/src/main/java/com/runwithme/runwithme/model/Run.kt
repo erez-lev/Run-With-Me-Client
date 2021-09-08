@@ -6,6 +6,8 @@ import java.io.Serializable
 data class Run(
     @SerializedName("_id")
     var _id: String,
+    @SerializedName("userName")
+    var userName: String = "",
     @SerializedName("date")
     val date: String,
     @SerializedName("startTime")

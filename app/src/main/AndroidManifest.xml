@@ -19,7 +19,9 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.RunWithMe"
         android:usesCleartextTraffic="true">
-        <activity android:name=".view.groups.CompareStatisticsActivity"></activity>
+        <activity android:name=".view.groups.CompareStatisticsActivity"
+            android:screenOrientation="landscape">
+        </activity>
         <activity android:name=".view.groups.ScheduleRunActivity"></activity>
         <activity android:name=".view.groups.CreateGroupActivity" />
         <activity android:name=".view.profile.StatisticsDetailsActivity" />
@@ -62,7 +64,8 @@
 
         <activity
             android:name=".view.activity.MainActivity"
-            android:screenOrientation="nosensor"></activity>
+            android:screenOrientation="nosensor">
+        </activity>
     </application>
 
 </manifest>
