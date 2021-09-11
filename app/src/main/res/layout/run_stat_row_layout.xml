@@ -45,7 +45,7 @@
                     android:fontFamily="@font/courgette"
                     android:gravity="center"
                     android:text="@string/group_run"
-                    android:textColor="@color/white"
+                    android:textColor="@color/turquoise"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -60,7 +60,7 @@
                     android:gravity="center"
                     android:text="@string/date_example"
                     android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:textColor="@color/turquoise"
                     app:layout_constraintEnd_toEndOf="@+id/run_type_title"
                     app:layout_constraintStart_toStartOf="@+id/run_type_title"
                     app:layout_constraintTop_toBottomOf="@+id/run_type_title" />
@@ -103,6 +103,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:text="@string/steps_example"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/step_imageView" />
 
@@ -125,6 +126,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
                     android:text="22:00:05H"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toEndOf="@+id/total_steps_textView"
                     app:layout_constraintTop_toBottomOf="@+id/time_imageView" />
 
@@ -144,6 +146,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
                     android:text="@string/distance_example"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toEndOf="@+id/total_time_textView"
                     app:layout_constraintTop_toBottomOf="@+id/road_imageView" />
 
@@ -164,6 +167,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
                     android:text="@string/speed_example"
+                    android:textStyle="bold"
                     android:textAlignment="center"
                     app:layout_constraintStart_toEndOf="@+id/distance_textView"
                     app:layout_constraintTop_toBottomOf="@+id/speed_imageView" />
@@ -173,6 +177,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/steps"
+                    android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/step_imageView"
                     app:layout_constraintEnd_toEndOf="@+id/step_imageView"
                     app:layout_constraintHorizontal_bias="0.48"
@@ -183,6 +188,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/time"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="@+id/time_imageView"
                     app:layout_constraintStart_toStartOf="@+id/time_imageView"
                     app:layout_constraintTop_toTopOf="@+id/steps_title" />
@@ -192,6 +198,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/distance"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="@+id/road_imageView"
                     app:layout_constraintStart_toStartOf="@+id/road_imageView"
                     app:layout_constraintTop_toTopOf="@+id/time_title" />
@@ -201,6 +208,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/avg_pace"
+                    android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="@+id/speed_imageView"
                     app:layout_constraintStart_toStartOf="@+id/speed_imageView"
                     app:layout_constraintTop_toTopOf="@+id/distance_title" />
