@@ -14,6 +14,14 @@ object TimeUtils {
         return convertSecondsToHours(duration.seconds)
     }
 
+    fun calculateTimeDifferenceInMinutes(startTime:String, endTime:String): Long{
+        val start = stringToLocalTime(startTime)
+        val end = stringToLocalTime(endTime)
+        val duration: Duration = Duration.between(start, end)
+
+        return duration.toMinutes()
+    }
+
     fun stringToLocalDate(stringDate : String) : LocalDate{
         val splitedString = stringDate.split("-","T")
         return LocalDate.of(splitedString[0].toInt(),splitedString[1].toInt(),splitedString[2].toInt())
