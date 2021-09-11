@@ -27,6 +27,8 @@ object Constants {
 
     //Retrofit
     const val BASE_URL = "http://192.168.0.107:3000/run-with-me/"
+    const val MAPS_STATIC_URL = "https://maps.googleapis.com/maps/api/staticmap?"
+
 
     //Room
     const val DATABASE_NAME = "run_with_me_database"
