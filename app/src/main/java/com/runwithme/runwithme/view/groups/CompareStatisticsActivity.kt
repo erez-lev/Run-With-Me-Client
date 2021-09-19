@@ -36,14 +36,13 @@ class CompareStatisticsActivity : AppCompatActivity() {
         }
 
         val xLabels = getXLabelsAndSetEntries(memberRuns)
-        Log.d("Compareeeee", "x labels: $xLabels")
 
         val xAxisDistance = binding.barChartDistance.xAxis
         xAxisDistance.position = XAxis.XAxisPosition.BOTTOM
         xAxisDistance.labelCount = memberRuns.size
         xAxisDistance.valueFormatter = IndexAxisValueFormatter(xLabels)
 
-        distanceDataSet = BarDataSet(distanceEntries, "Distance")
+        distanceDataSet = BarDataSet(distanceEntries, "Distance (km)")
         val distanceData = BarData(distanceDataSet)
 
         binding.barChartDistance.data = distanceData
@@ -65,7 +64,7 @@ class CompareStatisticsActivity : AppCompatActivity() {
         xAxisAvgPace.labelCount = memberRuns.size
         xAxisAvgPace.valueFormatter = IndexAxisValueFormatter(xLabels)
 
-        avgPaceDataSet = BarDataSet(avgPaceEntries, "Avg. Pace (km/h)")
+        avgPaceDataSet = BarDataSet(avgPaceEntries, "Avg. Pace (min/km)")
         val avgPaceData = BarData(avgPaceDataSet)
 
         binding.barChartAvgPace.data = avgPaceData
